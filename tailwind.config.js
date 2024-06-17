@@ -20,6 +20,7 @@ export default {
       },
       transitionDuration: {
         inherit: "inherit",
+        360: "360ms"
       },
       fontFamily: {
         inter: '"Inter", sans-serif',

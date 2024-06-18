@@ -66,7 +66,7 @@ export default function Header() {
 
                 {item.action && (
                   <button
-                    className="mt-1 bg-tertiary w-2/3 py-1 rounded-sm font-light text-sm duration-200 hover:bounce border border-front/10"
+                    className="mt-1 bg-background text-front/90 hover:text-front w-2/3 py-1 rounded-sm font-light text-sm duration-200 hover:bounce border border-front/10"
                     onClick={item.action.callback}
                   >
                     {item.action.text}

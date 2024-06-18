@@ -138,3 +138,7 @@ export function getRandomFromArray<T>(array: Array<T>): T {
   const randomIndex = Math.floor(Math.random() * array.length);
   return array[randomIndex];
 }
+
+export function formatEvmAddressForDiplay(address: string) {
+  return address.slice(0, 2 + 5) + "..." + address.slice(address.length - 5);
+}

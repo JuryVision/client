@@ -24,7 +24,7 @@ export default function Navbar() {
         <img
           src="/logo.png"
           alt="Logo"
-          className="w-[2.2em] group-hover:rotate-[360deg] duration-300"
+          className="w-[2.2em] group-hover:rotate-[360deg] duration-300 "
         />
         <h1>JuryVision</h1>
       </Link>

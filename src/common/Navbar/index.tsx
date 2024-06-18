@@ -74,31 +74,37 @@ const navbarItems = [
             icon: "contacts",
             title: "Get an account",
             subtitle: "Get Started Using JuryVision",
+            link: "/",
           },
           {
             icon: "vote",
             title: "Get Voting Power",
             subtitle: "okay okay",
+            link: "/",
           },
           {
             icon: "sportsMma",
             title: "JV League",
             subtitle: "Easy Rewards in tournaments",
+            link: "/",
           },
           {
             icon: "contacts",
             title: "Get an account",
             subtitle: "Get Started Using JuryVision",
+            link: "/",
           },
           {
             icon: "vote",
             title: "Get Voting Power",
             subtitle: "okay okay",
+            link: "/",
           },
           {
             icon: "sportsMma",
             title: "JV League",
             subtitle: "Easy Rewards in tournaments",
+            link: "/",
           },
         ]}
       />
@@ -113,16 +119,19 @@ const navbarItems = [
             icon: "accountBalance",
             title: "Do Nothing",
             subtitle: "Just Useless",
+            link: "/",
           },
           {
             icon: "sportsMma",
             title: "JV League",
             subtitle: "Easy Rewards",
+            link: "/",
           },
           {
             icon: "contacts",
             title: "Get an account",
             subtitle: "Get Started",
+            link: "/",
           },
         ]}
       />
@@ -150,31 +159,37 @@ const navbarItems = [
             icon: "contacts",
             title: "Get an account",
             subtitle: "Get Started Using JuryVision",
+            link: "/",
           },
           {
             icon: "vote",
             title: "Get Voting Power",
             subtitle: "okay okay",
+            link: "/",
           },
           {
             icon: "sportsMma",
             subtitle: "Easy Rewards in tournaments",
             title: "JV League",
+            link: "/",
           },
           {
             icon: "contacts",
             title: "Get an account",
             subtitle: "Get Started Using JuryVision",
+            link: "/",
           },
           {
             icon: "vote",
             title: "Get Voting Power",
             subtitle: "okay okay",
+            link: "/",
           },
           {
             icon: "sportsMma",
             subtitle: "Easy Rewards in tournaments",
             title: "JV League",
+            link: "/",
           },
         ]}
       />

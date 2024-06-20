@@ -78,9 +78,9 @@ const navbarItems = [
           },
           {
             icon: "vote",
-            title: "Get Voting Power",
-            subtitle: "okay okay",
-            link: "/",
+            title: "Stake",
+            subtitle: "Get Voting power",
+            link: "/stake",
           },
           {
             icon: "sportsMma",

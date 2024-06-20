@@ -8,6 +8,7 @@ import Layout from "../layout";
 import HomePage from "./HomePage";
 import CasesPage from "./CasesPage";
 import ErrorPage from "./ErrorPage/ErrorPage";
+import CasePage from "./CasePage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -15,6 +16,7 @@ const router = createBrowserRouter(
       <Route element={<Layout.Default />}>
         <Route index element={<HomePage />} />
         <Route path="cases" element={<CasesPage />} />
+        <Route path="cases/:id" element={<CasePage />} />
       </Route>
 
       <Route path="*" element={<ErrorPage />} />

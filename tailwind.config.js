@@ -10,8 +10,9 @@ export default {
       colors: {
         primary: "#25a9ff",
         secondary: "#C23631",
+        tertiary: "#1b1c1d",
         background: "#000000",
-        foreground: "",
+        foreground: "#0a0b0c",
         front: "#FFFFFF",
         back: "#000000",
       },
@@ -20,7 +21,7 @@ export default {
       },
       transitionDuration: {
         inherit: "inherit",
-        360: "360ms"
+        360: "360ms",
       },
       fontFamily: {
         inter: '"Inter", sans-serif',

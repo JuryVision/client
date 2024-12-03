@@ -3,6 +3,9 @@ import Icon from "../Icon";
 import HoverNavItem from "./components/HoverNavItem";
 import NavItemDropdown from "./components/NavItemDropdown";
 import NavDropdownList from "./components/NavDropdownList";
+import { Link } from "react-router-dom";
+
+
 export default function Navbar() {
   const notificationsUnread = useState(Math.random() < 0.5 ? true : false);
   const [dropdown, setDropdown] = useState<{
@@ -15,12 +18,15 @@ export default function Navbar() {
   });
   return (
     <nav className="bg-background p-page py-4 fixed top-0 left-0 w-full flex items-center justify-center z-[999]">
-      <div className="flex items-center gap-x-2 text-xl flex-1">
-        <img
-          src="https://assets-global.website-files.com/6425f546844727ce5fb9e5ab/65690e5e73e9e2a416e3502f_sui-mark.svg"
-          alt="Logo"
-        />
-        <h1>JuryVision</h1>
+     <div className="flex-1">
+        <Link to="/" className="flex items-center gap-x-2 text-xl w-max group">
+          <img
+            src="/logo.png"
+            alt="Logo"
+            className="w-[2.2em] group-hover:rotate-[360deg] duration-300 group-hover:scale-[107%]"
+          />
+          <h1>JuryVision</h1>
+        </Link>
       </div>
       <div className="flex gap-x-9 items-center pt-1 group">
         {navbarItems.map((item, key) => (

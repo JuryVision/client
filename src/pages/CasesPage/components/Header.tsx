@@ -19,7 +19,7 @@ export default function Header() {
     },
   ];
   return (
-    <section className="h-[30vh] pt-28 p-page flex gap-x-5">
+    <section className="pt-28 p-page flex gap-x-5">
       <div className="basis-1/2 flex flex-col">
         <h1 className="text-xl font-semibold mb-5">Status</h1>
         <div className="rounded-md bg-foreground p-4 border border-front/10 flex flex-col gap-y-3">

@@ -60,120 +60,137 @@ export default function Navbar() {
     </nav>
   );
 }
+
+
 const navbarItems = [
-  {
-    title: "Retail",
-    element: (
-      <NavDropdownList
-        items={[
-          {
-            icon: "contacts",
-            title: "Get an account",
-            subtitle: "Get Started Using JuryVision",
-          },
-          {
-            icon: "vote",
-            title: "Get Voting Power",
-            subtitle: "okay okay",
-          },
-          {
-            icon: "sportsMma",
-            title: "JV League",
-            subtitle: "Easy Rewards in tournaments",
-          },
-          {
-            icon: "contacts",
-            title: "Get an account",
-            subtitle: "Get Started Using JuryVision",
-          },
-          {
-            icon: "vote",
-            title: "Get Voting Power",
-            subtitle: "okay okay",
-          },
-          {
-            icon: "sportsMma",
-            title: "JV League",
-            subtitle: "Easy Rewards in tournaments",
-          },
-        ]}
-      />
-    ),
-  },
-  {
-    title: "Business",
-    element: (
-      <NavDropdownList
-        items={[
-          {
-            icon: "accountBalance",
-            title: "Do Nothing",
-            subtitle: "Just Useless",
-          },
-          {
-            icon: "sportsMma",
-            title: "JV League",
-            subtitle: "Easy Rewards",
-          },
-          {
-            icon: "contacts",
-            title: "Get an account",
-            subtitle: "Get Started",
-          },
-        ]}
-      />
-    ),
-  },
-  {
-    title: "Build",
-    element: (
-      <p className="w-[50vw]">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
-        explicabo accusantium, recusandae eveniet ducimus harum aspernatur quos
-        voluptate odio fugiat enim, illum facere quo a quia nihil numquam,
-        soluta minima aperiam? Distinctio possimus rem aperiam ut repellat eos
-        doloribus expedita qui unde, a reprehenderit, voluptatibus consequuntur
-        sint nobis sit repudiandae deserunt? Voluptas, et labore!
-      </p>
-    ),
-  },
-  {
-    title: "Services",
-    element: (
-      <NavDropdownList
-        items={[
-          {
-            icon: "contacts",
-            title: "Get an account",
-            subtitle: "Get Started Using JuryVision",
-          },
-          {
-            icon: "vote",
-            title: "Get Voting Power",
-            subtitle: "okay okay",
-          },
-          {
-            icon: "sportsMma",
-            subtitle: "Easy Rewards in tournaments",
-            title: "JV League",
-          },
-          {
-            icon: "contacts",
-            title: "Get an account",
-            subtitle: "Get Started Using JuryVision",
-          },
-          {
-            icon: "vote",
-            title: "Get Voting Power",
-            subtitle: "okay okay",
-          },
-          {
-            icon: "sportsMma",
-            subtitle: "Easy Rewards in tournaments",
-            title: "JV League",
-          },
-        ]}
-      />
-    ),
-  },
-];
+    {
+      title: "Retail",
+      element: (
+        <NavDropdownList
+          items={[
+            {
+              icon: "contacts",
+              title: "Get an account",
+              subtitle: "Get Started Using JuryVision",
+              link: "/",
+            },
+            {
+              icon: "vote",
+              title: "Get Voting Power",
+              subtitle: "okay okay",
+              link: "/",
+            },
+            {
+              icon: "sportsMma",
+              title: "JV League",
+              subtitle: "Easy Rewards in tournaments",
+              link: "/",
+            },
+            {
+              icon: "contacts",
+              title: "Get an account",
+              subtitle: "Get Started Using JuryVision",
+              link: "/",
+            },
+            {
+              icon: "vote",
+              title: "Get Voting Power",
+              subtitle: "okay okay",
+              link: "/",
+            },
+            {
+              icon: "sportsMma",
+              title: "JV League",
+              subtitle: "Easy Rewards in tournaments",
+              link: "/",
+            },
+          ]}
+        />
+      ),
+    },
+    {
+      title: "Business",
+      element: (
+        <NavDropdownList
+          items={[
+            {
+              icon: "accountBalance",
+              title: "Do Nothing",
+              subtitle: "Just Useless",
+              link: "/",
+            },
+            {
+              icon: "sportsMma",
+              title: "JV League",
+              subtitle: "Easy Rewards",
+              link: "/",
+            },
+            {
+              icon: "contacts",
+              title: "Get an account",
+              subtitle: "Get Started",
+              link: "/",
+            },
+          ]}
+        />
+      ),
+    },
+    {
+      title: "Build",
+      element: (
+        <p className="w-[50vw]">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+          explicabo accusantium, recusandae eveniet ducimus harum aspernatur quos
+          voluptate odio fugiat enim, illum facere quo a quia nihil numquam,
+          soluta minima aperiam? Distinctio possimus rem aperiam ut repellat eos
+          doloribus expedita qui unde, a reprehenderit, voluptatibus consequuntur
+          sint nobis sit repudiandae deserunt? Voluptas, et labore!
+        </p>
+      ),
+    },
+    {
+      title: "Services",
+      element: (
+        <NavDropdownList
+          items={[
+            {
+              icon: "contacts",
+              title: "Get an account",
+              subtitle: "Get Started Using JuryVision",
+              link: "/",
+            },
+            {
+              icon: "vote",
+              title: "Get Voting Power",
+              subtitle: "okay okay",
+              link: "/",
+            },
+            {
+              icon: "sportsMma",
+              subtitle: "Easy Rewards in tournaments",
+              title: "JV League",
+              link: "/",
+            },
+            {
+              icon: "contacts",
+              title: "Get an account",
+              subtitle: "Get Started Using JuryVision",
+              link: "/",
+            },
+            {
+              icon: "vote",
+              title: "Get Voting Power",
+              subtitle: "okay okay",
+              link: "/",
+            },
+            {
+              icon: "sportsMma",
+              subtitle: "Easy Rewards in tournaments",
+              title: "JV League",
+              link: "/",
+            },
+          ]}
+        />
+      ),
+    },
+  ];

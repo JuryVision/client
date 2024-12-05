@@ -55,4 +55,32 @@
   100% {
     scale: 1;
   }
+
 }
+@keyframes bell-hover {
+  0% {
+    rotate: 0deg;
+  }
+  10% {
+    rotate: -30deg;
+  }
+  30% {
+    rotate: 30deg;
+  }
+  50% {
+    rotate: -15deg;
+  }
+  70% {
+    rotate: 8deg;
+  }
+  90% {
+    rotate: -5deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+  
+}
+
+
+

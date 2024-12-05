@@ -24,4 +24,8 @@
   .bounce {
     animation: bounce 300ms;
   }
+
+  .bell-hover {
+    animation: bounce 700ms, bell-hover 800ms;
+  }
 }

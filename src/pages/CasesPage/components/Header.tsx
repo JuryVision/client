@@ -60,8 +60,7 @@ export default function Header() {
                 <p className="text-base font-semibold">{item.value}</p>
                 {item.action && (
                   <button
-                    className="mt-1 bg-tertiary w-2/3 py-1 rounded-sm font-light text-sm duration-200 hover:bounce border border-front/10"
-                    onClick={item.action.callback}
+                 className="mt-1 bg-background text-front/90 hover:text-front w-2/3 py-1 rounded-sm font-light text-sm duration-200 hover:bounce border border-front/10"
                   >
                     {item.action.text}
                   </button>

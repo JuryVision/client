@@ -13,7 +13,10 @@ export default function NavDropdownList(props: {
     <ul className={twMerge("px-5 py-3 flex flex-col gap-y-5")}>
       {props.items.map((item, key) => (
         <li key={key}>
-        <Link className="flex gap-x-2 group/inner" to={item.link}>
+            <Link
+            className="flex gap-x-2 group/inner duration-150 active:scale-90"
+            to={item.link}
+          >
           <Icon
             icon={item.icon}
             className="text-[1.7em] group-hover/inner:scale-y-150 group-hover/inner:text-primary group-hover/inner:-scale-x-150 duration-300 pt-1"

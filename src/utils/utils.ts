@@ -142,3 +142,28 @@ export function getRandomFromArray<T>(array: Array<T>): T {
 export function formatEvmAddressForDiplay(address: string) {
   return address.slice(0, 2 + 5) + "..." + address.slice(address.length - 5);
 }
+
+export function formatMillisecondsTimeForDisplay(milliseconds: number): string {
+  const seconds = Math.floor(milliseconds / 1000);
+  const minutes = Math.floor(seconds / 60);
+  const hours = Math.floor(minutes / 60);
+  if (hours > 0) {
+    const remainingMinutes = minutes % 60;
+    return `${hours}h${remainingMinutes > 0 ? remainingMinutes + "min" : ""}`;
+  } else if (minutes > 0) {
+    const remainingSeconds = seconds % 60;
+    return `${minutes}min${
+      remainingSeconds > 0 ? remainingSeconds + "sec" : ""
+    }`;
+  } else {
+    return `${seconds}sec`;
+  }
+}
+export function shuffleArray<T>(array: T[]): T[] {
+  const shuffledArray = array.slice(); // Create a copy of the array to avoid mutating the original
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]]; // Swap elements
+  }
+  return shuffledArray;
+}

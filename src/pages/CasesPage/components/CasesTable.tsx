@@ -4,6 +4,7 @@ import {
   formatMillisecondsTimeForDisplay,
   shuffleArray,
 } from "../../../utils";
+import { Link } from "react-router-dom";
 
 
 export default function CasesTable() {
@@ -42,45 +43,48 @@ function CasesTableEntry(props: { entry: (typeof casesList)[number] }) {
     ((item.createdAt + item.duration - Date.now()) / item.duration) * 100;
   return (
     <>
-      <div className="flex p-3 text-sm">
-        <p className="basis-[30%] truncate">
-          <span className="text-xs">{item.defender}</span>
-          <br />
-          <span className="text-primary text-xs">
+      <Link to={`/cases/${1}`} className="group">
+        <div className="flex p-3 text-sm group-hover:bg-primary/10 group-hover:rounded duration-700 group-hover:scale-[100.3%] group-hover:duration-500">
+          <p className="basis-[30%] truncate">
+            <span className="text-xs">{item.defender}</span>
+            <br />
+            <span className="text-primary text-xs">
+              {formatEvmAddressForDiplay(item.plaintiff)}
+            </span>
+          </p>
+          <p className="basis-[30%] truncate">
             {formatEvmAddressForDiplay(item.plaintiff)}
-          </span>
-        </p>
-        <p className="basis-[30%] truncate">
-          {formatEvmAddressForDiplay(item.plaintiff)}
-        </p>
-        <p className="basis-[30%] truncate">
-          <div className="relative h-2/3 w-full bg-background rounded overflow-hidden border border-front/20">
-            <figure
-              className="absolute-cover Z-1 bg-gradient-to-r from-red-500 via-orange-400 to-green-600"
-              style={{
-                clipPath: `polygon(0% 0%, 0% 100%, ${timeElapsedPercentage}% 100%, ${timeElapsedPercentage}% 0%)`,
-              }}
-            />
-            <p className="absolute-center drop-shadow-md">
-              {formatMillisecondsTimeForDisplay(
-                item.createdAt + item.duration - Date.now()
-              )}{" "}
-              left
-            </p>
-          </div>
-        </p>
-        <div className="w-[10%] flex justify-center self-center">
-          {/* {item.priority === 0 && (
+          </p>
+          <p className="basis-[30%] truncate">
+            <div className="relative h-2/3 w-full bg-background rounded overflow-hidden border border-front/20">
+              <figure
+                className="absolute-cover Z-1 bg-gradient-to-r from-red-500 via-orange-400 to-green-600"
+                style={{
+                  clipPath: `polygon(0% 0%, 0% 100%, ${timeElapsedPercentage}% 100%, ${timeElapsedPercentage}% 0%)`,
+                }}
+              />
+              <p className="absolute-center drop-shadow-md">
+                {formatMillisecondsTimeForDisplay(
+                  item.createdAt + item.duration - Date.now()
+                )}{" "}
+                left
+              </p>
+            </div>
+          </p>
+
+          <div className="w-[10%] flex justify-center self-center">
+            {/* {item.priority === 0 && (
               <img className="h-[2em]" src="/icons/priority-0.png" />
             )} */}
-          {item.priority === 1 && (
-            <img className="h-[2em]" src="/icons/priority-1.png" />
-          )}
-          {item.priority === 2 && (
-            <img className="h-[2em]" src="/icons/priority-2.png" />
-          )}
+            {item.priority === 1 && (
+              <img className="h-[2em]" src="/icons/priority-1.png" />
+            )}
+            {item.priority === 2 && (
+              <img className="h-[2em]" src="/icons/priority-2.png" />
+            )}
+          </div>
         </div>
-      </div>
+      </Link>
     </>
   );
 }

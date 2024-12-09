@@ -2,9 +2,15 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { formatEvmAddressForDiplay } from "../../utils";
 import { twMerge } from "tailwind-merge";
+import Icon from "../../common/Icon";
+import useModal from "../../hooks/useModal";
+import AddPlaintiffModal from "./components/AddPlaintiffModal";
+
 export default function () {
   const { id } = useParams();
   const item = dummy;
+  const modal = useModal();
+
   const textAreaStyling =
     "w-full border border-front/10 bg-primary/5 p-3 rounded text-sm scrollbar-primary";
   return (
@@ -85,6 +91,19 @@ export default function () {
                 <p className="w-1/2 truncate p-2">{ev.value}</p>
               </div>
             ))}
+             <button
+              onClick={() => modal.show(<AddPlaintiffModal />)}
+              className="flex items-center justify-center gap-x-2 bg-background py-1 text-sm hover:bg-front/5 duration-300 ease-in-out border border-front/10 cursor-pointer"
+            >
+              Add Evidence{" "}
+              <span>
+                {" "}
+                <Icon
+                  icon="add"
+                  className="text-[1.1rem] rounded-full border"
+                />
+              </span>
+            </button>
           </div>
         </div>
       </section>

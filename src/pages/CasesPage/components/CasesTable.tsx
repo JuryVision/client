@@ -1,10 +1,10 @@
-import React from "react";
 import {
   formatEvmAddressForDiplay,
   formatMillisecondsTimeForDisplay,
   shuffleArray,
 } from "../../../utils";
 import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 
 
 export default function CasesTable() {
@@ -39,8 +39,17 @@ export default function CasesTable() {
 
 function CasesTableEntry(props: { entry: (typeof casesList)[number] }) {
   const { entry: item } = props;
+  
+  const [currentTime, setCurrentTime] = useState(Date.now());
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTime(Date.now());
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   const timeElapsedPercentage =
-    ((item.createdAt + item.duration - Date.now()) / item.duration) * 100;
+    ((item.createdAt + item.duration - currentTime) / item.duration) * 100;
   return (
     <>
       <Link to={`/cases/${1}`} className="group">

@@ -17,7 +17,7 @@ export default function Navbar() {
     y: 0,
   });
   return (
-    <nav className="bg-background p-page py-4 fixed top-0 left-0 w-full flex items-center justify-center z-[999]">
+    <nav className="bg-background p-page fixed top-0 left-0 w-full flex items-center justify-center z-[999]">
        <Link to="/" className="flex items-center gap-x-2 text-xl flex-1 group">
         <img
           src="/logo.png"

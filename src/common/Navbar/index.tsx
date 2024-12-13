@@ -24,7 +24,7 @@ export default function Navbar() {
           alt="Logo"
           className="w-[2.2em] group-hover:rotate-[360deg] duration-300"
         />
-        <h1>JuryVision</h1>
+        <h1>Opticks</h1>
       </Link>
       <div className="flex gap-x-9 items-center pt-1 group">
         {navbarItems.map((item, key) => (

@@ -2,12 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 export default function Hero() {
   const flag = useRef(false);
   const possibleHeaders = [
-    "Businesses         ",
-    "Developers         ",
-    "Startups         ",
+    "  Optimization         ",
+    "Efficiency        ",
+    "Security          ",
     "Contracts         ",
-    "Crypto         ",
-    "Disputes         ",
+    "Developers        ",
   ];
   const headerIndex = useRef(-1);
   const [headerText, setHeaderText] = useState("");
@@ -49,7 +48,7 @@ export default function Hero() {
   }, []);
   return (
     <section className="p-page h-screen flex flex-col justify-center items-center tracking-tighter relative">
-      <h1 className="text-7xl font-bold mb-6">The Abribtration Platform</h1>
+      <h1 className="text-7xl font-bold mb-6">The AI-Driven Platform</h1>
       <h2
         className="text-9xl font-bold bg-clip-text text-transparent flex"
         style={{

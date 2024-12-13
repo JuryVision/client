@@ -17,6 +17,10 @@
     @apply px-[12vw];
   }
 
+  .text-bg-gradient {
+    @apply bg-clip-text text-transparent;
+  }
+
   .absolute-cover {
     @apply absolute w-full h-full top-0 left-0;
   }

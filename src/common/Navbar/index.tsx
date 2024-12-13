@@ -45,12 +45,12 @@ export default function Navbar() {
       </div>
       <div className="flex-1 flex items-center">
         <figure className="flex-1" />
-        <button className="text-xl relative rounded-full border border-front/20 p-3 mr-5 group">
+        {/* <button className="text-xl relative rounded-full border border-front/20 p-3 mr-5 group">
           <Icon icon="notification" className="group-hover:bell-hover" />
           {notificationsUnread && (
             <figure className="absolute top-0 right-0 w-2 h-2 rounded-full bg-red-500" />
           )}
-        </button>
+        </button> */}
         <ConnectWallet />
       </div>
     </nav>
@@ -60,7 +60,7 @@ export default function Navbar() {
 
 const navbarItems = [
     {
-      title: "Retail",
+      title: "Contract Analyzer",
       element: (
         <NavDropdownList
           items={[
@@ -105,7 +105,7 @@ const navbarItems = [
       ),
     },
     {
-      title: "Business",
+      title: "In-Contract Tools",
       element: (
         <NavDropdownList
           items={[
@@ -131,21 +131,9 @@ const navbarItems = [
         />
       ),
     },
+   
     {
-      title: "Build",
-      element: (
-        <p className="w-[50vw]">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
-          explicabo accusantium, recusandae eveniet ducimus harum aspernatur quos
-          voluptate odio fugiat enim, illum facere quo a quia nihil numquam,
-          soluta minima aperiam? Distinctio possimus rem aperiam ut repellat eos
-          doloribus expedita qui unde, a reprehenderit, voluptatibus consequuntur
-          sint nobis sit repudiandae deserunt? Voluptas, et labore!
-        </p>
-      ),
-    },
-    {
-      title: "Services",
+      title: "0x Analyzer",
       element: (
         <NavDropdownList
           items={[

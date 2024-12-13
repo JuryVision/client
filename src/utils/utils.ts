@@ -167,3 +167,40 @@ export function shuffleArray<T>(array: T[]): T[] {
   }
   return shuffledArray;
 }
+
+
+
+export function generateRandomCharactersMatrix(
+  rows: number,
+  columns: number
+): string[][] {
+  const matrix: string[][] = [];
+
+  for (let i = 0; i < rows; i++) {
+    const row: string[] = [];
+    for (let j = 0; j < columns; j++) {
+      const randomChar = String.fromCharCode(
+        Math.floor(Math.random() * 26) + 65
+      ); // Random uppercase letter
+      row.push(randomChar);
+    }
+    matrix.push(row);
+  }
+
+  return matrix;
+}
+
+
+export function isPointInCircle(
+  center: { x: number; y: number },
+  radius: number,
+  test: {
+    x: number;
+    y: number;
+  }
+): boolean {
+  const distance = Math.sqrt(
+    (test.x - center.x) ** 2 + (test.y - center.y) ** 2
+  );
+  return distance <= radius;
+}

@@ -874,6 +874,19 @@
     "@tanstack/query-core" "4.36.1"
     use-sync-external-store "^1.2.0"
 
+"@typeform/embed-react@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@typeform/embed-react/-/embed-react-4.2.0.tgz#5e54f8686976f0fd72d7f637d314a978a0f39b3a"
+  integrity sha512-ZMMoRvDNRw9NawG/fF8gNoyo1HNUVC6UQvWQBagC5EcBjvMbArNSiEIcKsFVJeMw5j5DeSBVqY7WOTPje3ZjMQ==
+  dependencies:
+    "@typeform/embed" "5.2.0"
+    fast-deep-equal "^3.1.3"
+
+"@typeform/embed@5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-5.2.0.tgz#8763058d19c021df3131bee29f9cf39fc5fc7f85"
+  integrity sha512-V4VZEgBStq60Vhu4ruszOoGcyrZfu4les6h8ODcIen51xy69RKlk4uAI5V61VKa3ckJwfqiLyf1n0oHfo04G5A==
+
 "@types/connect@^3.4.33":
   version "3.4.37"
   resolved "https://registry.yarnpkg.com/@types/connect/-/connect-3.4.37.tgz#c66a96689fd3127c8772eb3e9e5c6028ec1a9af5"
@@ -2005,6 +2018,11 @@ eyes@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/eyes/-/eyes-0.1.8.tgz#62cf120234c683785d902348a800ef3e0cc20bc0"
   integrity sha512-GipyPsXO1anza0AOZdy69Im7hGFCNB7Y/NGjDlZGJ3GJJLtwNSb2vrzYrTYJRrRloVx7pl+bhUaTB8yiccPvFQ==
+
+fast-deep-equal@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
+  integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
 
 fast-glob@^3.2.12:
   version "3.2.12"

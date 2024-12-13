@@ -18,13 +18,25 @@ export default function Navbar() {
   });
   return (
     <nav className="bg-background p-page fixed top-0 left-0 w-full flex items-center justify-center z-[999]">
-       <Link to="/" className="flex items-center gap-x-2 text-xl flex-1 group">
-        <img
-          src="/logo.png"
-          alt="Logo"
-          className="w-[2.2em] group-hover:rotate-[360deg] duration-300"
-        />
-        <h1>Opticks</h1>
+      <Link to="/" className="flex items-center gap-x-2 text-xl flex-1 group">
+      <div className="relative group w-[2.2em] h-[2.2em]">
+  {/* Background gradient layer */}
+  <div
+    className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-secondary rounded-full"
+  ></div>
+  <img
+    src="/logo.png"
+    alt="Logo"
+    className="absolute inset-0 w-full h-full object-cover rounded-full group-hover:rotate-[360deg] duration-300 mix-blend-normal"
+  />
+</div>
+
+
+
+        <div className="text-[1rem] tracking-widest flex flex-col justify-center gap-y-1 bg-gradient-to-br from-primary via-accent to-secondary bg-clip-text font-poppins font-semibold leading-none text-transparent">
+          <h1>Opticks</h1>
+          <h1>Dapp</h1>
+        </div>
       </Link>
       <div className="flex gap-x-9 items-center pt-1 group">
         {navbarItems.map((item, key) => (
@@ -59,122 +71,122 @@ export default function Navbar() {
 
 
 const navbarItems = [
-    {
-      title: "Contract Analyzer",
-      element: (
-        <NavDropdownList
-          items={[
-            {
-              icon: "contacts",
-              title: "Get an account",
-              subtitle: "Get Started Using JuryVision",
-              link: "/",
-            },
-            {
-              icon: "vote",
-              title: "Stake",
-              subtitle: "Get Voting power",
-              link: "/stake",
-            },
-            {
-                icon: "lists",
-                title: "Explore cases",
-                subtitle: "check out ongoing cases to vote",
-                link: "/cases",
-              },
-            {
-              icon: "contacts",
-              title: "Get an account",
-              subtitle: "Get Started Using JuryVision",
-              link: "/",
-            },
-            {
-              icon: "vote",
-              title: "Get Voting Power",
-              subtitle: "okay okay",
-              link: "/",
-            },
-            {
-              icon: "sportsMma",
-              title: "JV League",
-              subtitle: "Easy Rewards in tournaments",
-              link: "/",
-            },
-          ]}
-        />
-      ),
-    },
-    {
-      title: "In-Contract Tools",
-      element: (
-        <NavDropdownList
-          items={[
-            {
-              icon: "accountBalance",
-              title: "Do Nothing",
-              subtitle: "Just Useless",
-              link: "/",
-            },
-            {
-              icon: "sportsMma",
-              title: "JV League",
-              subtitle: "Easy Rewards",
-              link: "/",
-            },
-            {
-              icon: "contacts",
-              title: "Get an account",
-              subtitle: "Get Started",
-              link: "/",
-            },
-          ]}
-        />
-      ),
-    },
-   
-    {
-      title: "0x Analyzer",
-      element: (
-        <NavDropdownList
-          items={[
-            {
-              icon: "contacts",
-              title: "Get an account",
-              subtitle: "Get Started Using JuryVision",
-              link: "/",
-            },
-            {
-              icon: "vote",
-              title: "Get Voting Power",
-              subtitle: "okay okay",
-              link: "/",
-            },
-            {
-              icon: "sportsMma",
-              subtitle: "Easy Rewards in tournaments",
-              title: "JV League",
-              link: "/",
-            },
-            {
-              icon: "contacts",
-              title: "Get an account",
-              subtitle: "Get Started Using JuryVision",
-              link: "/",
-            },
-            {
-              icon: "vote",
-              title: "Get Voting Power",
-              subtitle: "okay okay",
-              link: "/",
-            },
-            {
-              icon: "sportsMma",
-              subtitle: "Easy Rewards in tournaments",
-              title: "JV League",
-              link: "/",
-            },
-          ]}
-        />
-      ),
-    },
-  ];
+  {
+    title: "Contract Analyzer",
+    element: (
+      <NavDropdownList
+        items={[
+          {
+            icon: "contacts",
+            title: "Get an account",
+            subtitle: "Get Started Using JuryVision",
+            link: "/",
+          },
+          {
+            icon: "vote",
+            title: "Stake",
+            subtitle: "Get Voting power",
+            link: "/stake",
+          },
+          {
+            icon: "lists",
+            title: "Explore cases",
+            subtitle: "check out ongoing cases to vote",
+            link: "/cases",
+          },
+          {
+            icon: "contacts",
+            title: "Get an account",
+            subtitle: "Get Started Using JuryVision",
+            link: "/",
+          },
+          {
+            icon: "vote",
+            title: "Get Voting Power",
+            subtitle: "okay okay",
+            link: "/",
+          },
+          {
+            icon: "sportsMma",
+            title: "JV League",
+            subtitle: "Easy Rewards in tournaments",
+            link: "/",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    title: "In-Contract Tools",
+    element: (
+      <NavDropdownList
+        items={[
+          {
+            icon: "accountBalance",
+            title: "Do Nothing",
+            subtitle: "Just Useless",
+            link: "/",
+          },
+          {
+            icon: "sportsMma",
+            title: "JV League",
+            subtitle: "Easy Rewards",
+            link: "/",
+          },
+          {
+            icon: "contacts",
+            title: "Get an account",
+            subtitle: "Get Started",
+            link: "/",
+          },
+        ]}
+      />
+    ),
+  },
+
+  {
+    title: "0x Analyzer",
+    element: (
+      <NavDropdownList
+        items={[
+          {
+            icon: "contacts",
+            title: "Get an account",
+            subtitle: "Get Started Using JuryVision",
+            link: "/",
+          },
+          {
+            icon: "vote",
+            title: "Get Voting Power",
+            subtitle: "okay okay",
+            link: "/",
+          },
+          {
+            icon: "sportsMma",
+            subtitle: "Easy Rewards in tournaments",
+            title: "JV League",
+            link: "/",
+          },
+          {
+            icon: "contacts",
+            title: "Get an account",
+            subtitle: "Get Started Using JuryVision",
+            link: "/",
+          },
+          {
+            icon: "vote",
+            title: "Get Voting Power",
+            subtitle: "okay okay",
+            link: "/",
+          },
+          {
+            icon: "sportsMma",
+            subtitle: "Easy Rewards in tournaments",
+            title: "JV League",
+            link: "/",
+          },
+        ]}
+      />
+    ),
+  },
+];

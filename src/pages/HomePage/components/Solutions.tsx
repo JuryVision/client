@@ -19,7 +19,7 @@ const solutions = [
     title: "Pair Programming",
     content:
       "Pair Programming feature offers an interactive, AI-driven coding experience designed to enhance your learning journey.",
-    url: "/solutions",
+    url: "",
   },
 ];
 

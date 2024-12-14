@@ -2,11 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 export default function Hero() {
   const flag = useRef(false);
   const possibleHeaders = [
-    "  Optimization         ",
-    "Efficiency        ",
-    "Security          ",
-    "Contracts         ",
-    "Developers        ",
+    "Optimization         ",
+    " Efficiency        ",
+    " Security          ",
+    " Contracts         ",
+    " Developers        ",
   ];
   const headerIndex = useRef(-1);
   const [headerText, setHeaderText] = useState("");

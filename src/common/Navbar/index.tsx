@@ -48,12 +48,12 @@ export default function Navbar() {
             key={key}
           />
         ))}
-        <NavItemDropdown
+        {/* <NavItemDropdown
           x={dropdown.x}
           y={dropdown.y}
           className="group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none opacity-0"
           ShowElement={dropdown.element}
-        />
+        /> */}
       </div>
       <div className="flex-1 flex items-center">
         <figure className="flex-1" />
